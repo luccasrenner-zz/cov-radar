@@ -5,11 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start-dev": "nodemon ./app/server/server.js",
-    "test": "mocha"
+    "test": "mocha",
+    "lint": "eslint . --ext .js --fix --ignore-pattern node_modules/"
   },
-  "pre-commit": [
-    "mocha"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/luccasrenner/cov-radar.git"
@@ -25,5 +23,9 @@
     "express": "^4.17.1",
     "mocha": "^7.1.1",
     "nodemon": "^2.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-google": "^0.14.0"
   }
 }
