@@ -1,5 +1,5 @@
 module.exports = {
     SERVER : {
-        PORT : 3333
-    }
+        PORT : 3333,
+    },
 }
