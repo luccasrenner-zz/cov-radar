@@ -1,4 +1,6 @@
 const express = require('express');
 const app = express();
 
-app.listen( 3333 )
+const { SERVER } = require('../utils/constants/server');
+
+app.listen( SERVER.PORT, () => console.log(`Server ::${SERVER.PORT}`) );
